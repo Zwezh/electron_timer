@@ -1,0 +1,48 @@
+{
+  "name": "ElectronTimer",
+  "version": "0.1.0",
+  "description": "Electron Timer application build with Electron",
+  "author": {
+    "name": "Alex Zwezh",
+    "email": "alex.zwezh@gmail.com"
+  },
+  "homepage": "https://github.com/Zwezh/electron_timer",
+  "repository": {},
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.20",
+    "luxon": "^1.25.0",
+    "nanoid": "^3.1.16",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.1.0",
+    "bozon": "1.1.1",
+    "jest": "26.6.3",
+    "react-svg-loader": "^3.0.3",
+    "spectron": "12.0.0",
+    "webpack": "^5.4.0"
+  },
+  "build": {
+    "appId": "com.electron.electron_timer",
+    "productName": "Electron Timer",
+    "copyright": "Copyright 2020 Alex Zwezh",
+    "win": {
+      "publish": null
+    },
+    "mac": {
+      "publish": null,
+      "category": "your.app.category.type"
+    },
+    "linux": {
+      "category": "Utility",
+      "publish": null,
+      "target": ["AppImage", "deb"]
+    }
+  }
+}
