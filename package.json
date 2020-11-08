@@ -1,15 +1,17 @@
 {
   "name": "ElectronTimer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Electron Timer application build with Electron",
   "author": {
     "name": "Alex Zwezh",
     "email": "alex.zwezh@gmail.com"
   },
   "homepage": "https://github.com/Zwezh/electron_timer",
-  "repository": {},
+  "repository": "https://github.com/Zwezh/electron_timer",
   "dependencies": {
     "classnames": "^2.2.6",
+    "electron-log": "^4.3.0",
+    "electron-updater": "^4.3.5",
     "lodash": "^4.17.20",
     "luxon": "^1.25.0",
     "nanoid": "^3.1.16",
@@ -32,17 +34,19 @@
     "appId": "com.electron.electron_timer",
     "productName": "Electron Timer",
     "copyright": "Copyright 2020 Alex Zwezh",
-    "win": {
-      "publish": null
+    "publish": {
+      "provider": "github"
     },
+    "win": {},
     "mac": {
-      "publish": null,
       "category": "your.app.category.type"
     },
     "linux": {
       "category": "Utility",
-      "publish": null,
-      "target": ["AppImage", "deb"]
+      "target": [
+        "AppImage",
+        "deb"
+      ]
     }
   }
 }
